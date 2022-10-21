@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Newverse</title>
+</head>
+<body class="form-body">
+    <header>
+        <div class="logo-caixa">
+            <h1>
+                <img src="wepik-abstract-gradient-pink-company-logo-2022718-205330.png" title="New Verse" class="logo">
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class = "descricao-form-box">
+        <h2>Contato</h2>
+        <p>Preencha o formulário para entrar em contato conosco</p>
+    </div>
+
+    <!--COPIAR TITULO DA PÁGINA CURSOS NESSA ÁREA-->
+    <main>
+        <form name="frmContato" method="get" action="mailto:teste@mail.com" target="_blank">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="nomesobrenome">* Nome Completo</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label for="email">* E-mail</label>
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">* Mensagem</label>
+                <textarea id="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
+
+
+                <label class="radio-button" for="contato">Como Prefere Nosso Contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+                </label>
+
+                <br>
+                <label for="horario">Qual o Motivo do seu Contato?
+                    <select>
+                        <option>Selecione...</option>
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Orçamento</option>
+                        <option>Trabalhar Conosco</option>
+                        <option>Relamação</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <label><input type="checkbox" class="chk">Gostaria de receber nossas novidades por e-mail?</label>
+            <br>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+    </main>
+
+    <footer>
+        <img src="vr-1911451_1280.png" alt="ícone-final">
+        <p class="copyright">&copy; New Verse - 2022</p>
+    </footer>
+</body>
+
+</html>
