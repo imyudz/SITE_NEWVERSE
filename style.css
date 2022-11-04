@@ -329,15 +329,16 @@ footer img{
     border: 0;
     line-height: 1;
     font-family: 'Tahoma', 'Arial';
-    background: #252525ea;
-    background-size: 400% 1500%;
-    animation: gradient 5s ease infinite;
+    background-image: url("wallpapersden.com_abstract-lines.jpg");
+    /*background-size: 400% 1500%;*/
+    animation: gradient 20s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
     height: 100vh;
 }
 
 form{
     margin: 9% 9%;
     color: #ffffff;
+    
 }
 
 fieldset{
@@ -345,15 +346,24 @@ fieldset{
     padding: 3% 3%;
     margin: auto;
     width: 50%;
+    border-color: #6f03f1;
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 fieldset input{
     width: 35%;
     margin: 1%;
+    height: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-color: #6f03f1;
 }
 
 textarea{
     margin: 1%;
+    border-color: #6f03f1;
 }
 
 .radio-button input{
@@ -367,6 +377,26 @@ textarea{
 
 .enviar{
 
+    display: inline-block;  
+    border-radius: 4px;  
+    background-color: #8e19bd;  
+    border: none;  
+    color: #FFFFFF;  
+    text-align: center;  
+    font-size: 15px;  
+    padding: 15px;  
+    width: 150px;  
+    transition: all 0.5s;  
+    cursor: pointer;  
+    margin-left: 45%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+.enviar:hover{      
+    background-color: #008CBA;      
+    color: white;
 }
 
 .descricao-form-box{
@@ -385,5 +415,5 @@ textarea{
 .descricao-form-box p{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(42, 38, 48);
-    font-size: 1.3rem;
+    font-size: 1.3rem;  
 }
