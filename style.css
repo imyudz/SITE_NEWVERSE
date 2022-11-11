@@ -205,7 +205,7 @@ footer img{
 .descricao-cursos-box p{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(42, 38, 48);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 
@@ -421,4 +421,18 @@ textarea{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(42, 38, 48);
     font-size: 1.3rem;  
+}
+
+.whatsapp-link{
+    font-size: 1.3rem;
+}
+
+.data{
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6f03f1;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    top: -70px;
+    right: 2%;
 }
