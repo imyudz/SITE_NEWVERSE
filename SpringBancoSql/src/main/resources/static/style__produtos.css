@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;700&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;700&display=swap');
+/*font-family: 'Anybody', cursive;*/
+
+
+    
+
+
+*{
+    font-family: 'Bahnschrift';
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    /*min-height: 100%;
+    /*overflow-x: hidden !important;
+    /*background: linear-gradient(#b025f7 30%, #9a1798 70%);*/
+    background-image: url(polygon-scatter-haikeiMAIOR.png);
+	animation: bgimg 10s infinite alternate linear;
+
+    
+}
+
+@keyframes bgimg {
+    100% {
+        background-position: 15% 50%;
+    }
+}
+
+header{
+    font-family: 'Anybody', sans-serif;
+    background: rgb(255, 255, 255);
+    padding: 1% 0;
+}
+
+nav{
+    position: absolute;
+    top: 38%;
+    right: 36%;
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+nav a:hover{
+    color: #8e19bd;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo-caixa{
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.logo{
+    width: 9%;
+}
+
+.buttonLogin{
+    position: absolute;
+    display: inline;
+    border-radius: 49px;
+    background-color: #2a262c;
+    border: none;  
+    color: #FFFFFF;  
+    text-align: center;  
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;  
+    width: 100px;
+    transition: all 0.6s;  
+    cursor: pointer;
+    margin-left: 60%;
+    bottom: -50%;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.buttonLogin:hover{
+    text-decoration: none;   
+    background-color: #8e19bd;      
+    color: white;
+}   
+
+.btn_login:active {
+	position:relative;
+	top:1px;
+}
+
+.sectioncard{
+    align-items: center;
+    overflow-x: hidden !important;
+    min-height: 60vh;
+}
+
+.titulo__principal{
+    font-family: 'Bahnschrift';
+    padding-top: 13%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color:white;
+    
+}
+
+.sectioncard{
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+}
+
+.card{
+    position: relative;
+    width: 320px;
+    height: 580px;
+    /*background: #6d0fdf;*/
+    /*background: #180029;*/
+    background: rgb(62, 24, 167);
+    border-radius: 14%;
+    overflow: hidden;
+}
+
+.card:hover{
+    border: outset 3px #6f03f1;
+    /*filter: drop-shadow(0 0 1rem  #0000003f);*/
+    /*filter: drop-shadow(0 0 0.3rem rgb(233, 191, 241));*/
+    filter: drop-shadow(0 0 0.3rem #6f03f1);
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    /*background: #180029;*/
+    background: #180029;
+    transform:skew(40deg,220deg);
+    filter: drop-shadow(0 0 1rem #180029);
+    transition: 0.6s;
+}
+
+.card:hover::before {
+    transform:skew(30deg,100deg);   
+    /*transform:skewY(-50deg);*/
+    right: -60%;
+}
+
+.card::after{
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+    padding: 2%;
+    content: 'Possuindo tecnologia inovadora e um sistema de projeção, contando com milhares de feixes de luz, consegue projetar suas NFTs desejadas, com velocidade e qualidade. Possui sistema integrado à nuvem. ';
+    color:  white;
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 250px;
+    height: 115px;
+    position: absolute;
+    bottom: 13%; 
+    left: -2%;
+    font-size: 1rem;
+    border: double #6f03f1 3px;
+    text-align: start;
+ 
+    
+}
+
+.card .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    z-index: 1;
+}
+
+
+.imagem_card1{
+    border-radius: 15%;
+    width: 93%;
+    filter: drop-shadow(0 0 0.2rem rgb(254,194,255));
+}
+
+.imagem_card1:hover{
+    filter: drop-shadow(0 0 0.2rem #6f03f1);
+}
+
+
+.card .contentBx{
+    font-family: 'Anybody', sans-serif;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    bottom:1%;
+}
+
+.card .contentBx h3{
+    font-family: 'Anybody', sans-serif;
+    font-size: 18px;
+    color: rgb(254,194,255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .compra{
+    padding: 1%;
+    width: 63%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(254,194,255);
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    bottom: -27%;
+    font-size: 1.5em;
+    left: 17%;
+    border: groove 1px rgb(233, 191, 241); 
+    margin-top: 3%; 
+}
+
+.card .compra:hover{
+    filter: drop-shadow(0 0 0.5rem rgb(233, 191, 241));
+}
+
+
+
+
+
+
+
+
+
+/* CARD 2 */
+.card2{
+    position: relative;
+    width: 320px;
+    height: 580px;
+    /*background: #6d0fdf;*/
+    /*background: #180029;*/
+    background: rgb(62, 24, 167);
+    border-radius: 14%;
+    overflow: hidden;
+}
+
+.card2:hover{
+    border: outset 3px #6f03f1;
+    /*filter: drop-shadow(0 0 1rem  #0000003f);*/
+    /*filter: drop-shadow(0 0 0.3rem rgb(233, 191, 241));*/
+    filter: drop-shadow(0 0 0.3rem #6f03f1);
+}
+
+.card2::before{
+    content: '';
+    position: absolute;
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    /*background: #180029;*/
+    background: #180029;
+    transform:skew(40deg,220deg);
+    filter: drop-shadow(0 0 1rem #180029);
+    transition: 0.6s;
+}
+
+.card2:hover::before {
+    transform:skew(30deg,100deg);   
+    /*transform:skewY(-50deg);*/
+    right: -60%;
+}
+
+.card2::after{
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+    padding: 2%;
+    content: 'Quadros interativos, que quando conectados ao software, consegue transmitir seus NFTs, em qualidade 4K. Projetado com tecnologia de ponta, possuindo integração com a nuvem.';
+    color: white;
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 250px;
+    height: 115px;
+    position: absolute;
+    bottom: 13%; 
+    left: -2%;
+    font-size: 1rem;
+    border: double #6f03f1 3px;
+    text-align: start;
+    
+}
+
+.card2 .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    z-index: 1;
+}
+
+
+.imagem_card2{
+    border-radius: 15%;
+    width: 93%;
+    filter: drop-shadow(0 0 0.2rem rgb(254,194,255));
+}
+
+.imagem_card2:hover{
+    filter: drop-shadow(0 0 0.2rem #6f03f1);
+}
+
+
+.card2 .contentBx{
+    font-family: 'Anybody', sans-serif;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    bottom:1%;
+}
+
+.card2 .contentBx h3{
+    font-family: 'Anybody', sans-serif;
+    font-size: 18px;
+    color: rgb(254,194,255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card2 .compra{
+    padding: 1%;
+    width: 63%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(254,194,255);
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    bottom: -27%;
+    font-size: 1.5em;
+    left: 17%;
+    border: groove 1px rgb(233, 191, 241); 
+    margin-top: 3%; 
+}
+
+.card2 .compra:hover{
+    filter: drop-shadow(0 0 0.5rem rgb(233, 191, 241));
+}
+
+
+
+
+/* CARD 3 */
+
+.card3{
+    position: relative;
+    width: 320px;
+    height: 580px;
+    /*background: #6d0fdf;*/
+    /*background: #180029;*/
+    background: rgb(62, 24, 167);
+    border-radius: 14%;
+    overflow: hidden;
+}
+
+.card3:hover{
+    border: outset 3px #6f03f1;
+    /*filter: drop-shadow(0 0 1rem  #0000003f);*/
+    /*filter: drop-shadow(0 0 0.3rem rgb(233, 191, 241));*/
+    filter: drop-shadow(0 0 0.3rem #6f03f1);
+}
+
+.card3::before{
+    content: '';
+    position: absolute;
+    top: -40%;
+    width: 100%;
+    height: 100%;
+    /*background: #180029;*/
+    background: #180029;
+    transform:skew(40deg,220deg);
+    filter: drop-shadow(0 0 1rem #180029);
+    transition: 0.6s;
+}
+
+.card3:hover::before {
+    transform:skew(30deg,100deg);   
+    /*transform:skewY(-50deg);*/
+    right: -60%;
+}
+
+.card3::after{
+    font-family: 'Bahnschrift';
+    font-weight: 300;
+    padding: 2%;
+    content: 'Cases eletrônicos em parceiria com a Louis Vitton, armazena circuitos eletrônicos e LCDs, as cases podem ser personalizadas. Modelos podem incluir cases com estofamento e encaixes para anexar suas outras cases.';
+    color: white;
+    margin-left: 10%;
+    margin-top: 3%;
+    width: 250px;
+    height: 115px;
+    position: absolute;
+    bottom: 13%; 
+    left: -2%;
+    font-size: 1rem;
+    border: double #6f03f1 3px;
+    text-align: start;
+    
+    
+}
+
+.card3 .imgBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    z-index: 1;
+}
+
+
+.imagem_card3{
+    border-radius: 15%;
+    width: 93%;
+    filter: drop-shadow(0 0 0.2rem rgb(254,194,255));
+}
+
+.imagem_card3:hover{
+    filter: drop-shadow(0 0 0.2rem #6f03f1);
+}
+
+
+.card3 .contentBx{
+    font-family: 'Anybody', sans-serif;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    bottom:1%;
+}
+
+.card3 .contentBx h3{
+    font-size: 18px;
+    color: rgb(254,194,255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card3 .compra{
+    padding: 1%;
+    width: 63%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    color: rgb(254,194,255);
+    text-decoration: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    bottom: -27%;
+    font-size: 1.5em;
+    left: 17%;
+    border: groove 1px rgb(233, 191, 241); 
+    margin-top: 3%; 
+}
+
+.card3 .compra:hover{
+    filter: drop-shadow(0 0 0.5rem rgb(233, 191, 241));
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+   /* background: rgb(44, 0, 44);*/
+   background:  #180029;
+    display: grid;
+    justify-content: center;
+    padding-top: 1%;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 1%;
+    margin-top: 15%;
+}
+
+footer img{
+    width:4%;
+    justify-self: center;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-family:'Bahnschrift';
+    font-size: 0.7rem;
+    margin: 10px 0 0;
+    justify-self: center;
+}
